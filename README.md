@@ -64,7 +64,7 @@ L'utilisation de **HostOS** est régie par une licence propriétaire stricte. Bi
 * **Services Managés** : Pour garantir une sécurité maximale et des mises à jour fluides, le Back-end (API Core) est exclusivement hébergé et maintenu par IonaGroup.
 * **Continuité de Service** : L'utilisation de ce CMS implique l'acceptation que les fonctionnalités vitales dépendent de la connectivité avec les serveurs officiels de IonaGroup.
 
-👉 **[Obtenir ma licence gratuite sur le site officiel](https://hostos.ionagroup.fr/)**
+👉 **[Voir la démo en ligne](https://hostos.ionagroup.fr/)** | **[Demander une licence gratuite sur Discord](https://discord.gg/694D9FAE99)**
 ---
 
 ### 🚀 Démarrage Rapide
