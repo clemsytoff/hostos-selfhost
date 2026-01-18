@@ -72,27 +72,32 @@ L'utilisation de **HostOS** est régie par une licence propriétaire stricte. Bi
 1. **Récupérer le projet**  
    - Téléchargez ou clonez le dossier compilé.
 
-2. **Modifier la configuration (facultatif)**  
-   - Ouvrez `dist/config.json` pour personnaliser :  
-     - `appName` : Nom de l’application  
-     - `apiUrl` : URL de l’API backend (Fournis)  
+2. **Configurer l'application**  
+   - Ouvrez `config.json` à la racine du projet pour personnaliser :  
+     - `appName` : Nom de l'application  
+     - `appDescription` : Description de l'application
+     - `apiUrl` : URL de l'API backend (fournie avec votre licence)
+     - `license_key` : Votre clé de licence (obligatoire)
+     - `site_url` : URL de votre site (obligatoire)
      - `faviconUrl` : URL du favicon
      - `discordUrl` : Lien Discord  
-     - `version` : Version de l’application (Ne pas modifier)  
-   - Exemple de `config.json` :  
+     - `version` : Version de l'application (ne pas modifier)  
+   - Exemple de `config.json` configuré :  
      ```json
      {
-       "appName": "DEMO - HostOS",
+       "appName": "Mon HostOS",
        "appDescription": "HostOS Application - A CMS for Hosts",
        "apiUrl": "https://hostosapi.ionagroup.fr",
+       "license_key": "votre_cle_de_licence",
+       "site_url": "https://votre-site.com",
        "faviconUrl": "https://ionagroup.fr/img/logo/logov1.png",
        "discordUrl": "https://discord.gg/694D9FAE99",
-       "version": "V1.1.7.1"
+       "version": "V2.1.0"
      }
      ```
 
-3. **Lancer l’application**  
-   - Depuis le dossier `dist/` :  
+3. **Lancer l'application en local**  
+   - Depuis la racine du projet :  
      ```bash
      npx serve .
      ```  
@@ -101,6 +106,11 @@ L'utilisation de **HostOS** est régie par une licence propriétaire stricte. Bi
      http://localhost:3000
      ```
 
-4. **C’est prêt !**  
-   - L’application chargera automatiquement les paramètres depuis `config.json`.  
+4. **Déployer en production**  
+   - Déployez tous les fichiers sur votre serveur web (Apache, Nginx, etc.)
+   - Assurez-vous que `config.json` contient vos vraies valeurs (`license_key`, `site_url`, `apiUrl`)
+   - Configurez votre serveur pour servir `index.html` pour toutes les routes (SPA)
+
+5. **C'est prêt !**  
+   - L'application chargera automatiquement les paramètres depuis `config.json`.  
    - Toute modification de ce fichier sera prise en compte **sans recompiler**.
