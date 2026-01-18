@@ -1,10 +1,11 @@
 {
   "appName": "DEMO - HostOS",
   "appDescription": "HostOS Application - A CMS for Hosts",
-  "apiUrl": "",
-  "license_key": "",
-  "site_url": "",
+  "apiUrl": "#",
+  "license_key": "#",
+  "site_url": "#",
+  "allowAdminRegister": 1,
   "faviconUrl": "https://ionagroup.fr/img/logo/logov1.png",
   "discordUrl": "https://discord.gg/694D9FAE99",
-  "version": "V2.1.0"
+  "version": "V2.1.1"
 }

@@ -1,6 +1,6 @@
 # 🚀 HostOS — CMS d'Hébergement de Nouvelle Génération
 
-![Version](https://img.shields.io/badge/version-2.1.0-blue.svg) 
+![Version](https://img.shields.io/badge/version-2.1.1-blue.svg) 
 ![Status](https://img.shields.io/badge/status-stable-green.svg)
 ![License](https://img.shields.io/badge/license-proprietary-red.svg)
 
@@ -79,6 +79,7 @@ L'utilisation de **HostOS** est régie par une licence propriétaire stricte. Bi
      - `apiUrl` : URL de l'API backend (fournie avec votre licence)
      - `license_key` : Votre clé de licence (obligatoire)
      - `site_url` : URL de votre site (obligatoire)
+     - `allowAdminRegister` : Autoriser l'inscription admin (`1` pour activer, `0` pour désactiver)
      - `faviconUrl` : URL du favicon
      - `discordUrl` : Lien Discord  
      - `version` : Version de l'application (ne pas modifier)  
@@ -90,21 +91,21 @@ L'utilisation de **HostOS** est régie par une licence propriétaire stricte. Bi
        "apiUrl": "https://hostosapi.ionagroup.fr",
        "license_key": "votre_cle_de_licence",
        "site_url": "https://votre-site.com",
+       "allowAdminRegister": 0,
        "faviconUrl": "https://ionagroup.fr/img/logo/logov1.png",
        "discordUrl": "https://discord.gg/694D9FAE99",
-       "version": "V2.1.0"
+       "version": "V2.1.1"
      }
      ```
+   - 💡 **Note** : Pour désactiver l'inscription admin et sécuriser votre installation, mettez `allowAdminRegister` à `0`.
 
-3. **Lancer l'application en local**  
-   - Depuis la racine du projet :  
+3. **Lancer l'application**  
+   - Ouvrez simplement `index.html` avec un serveur web.
+   - Pour un test rapide en local, vous pouvez utiliser :  
      ```bash
      npx serve .
-     ```  
-   - Ouvrez votre navigateur sur :  
      ```
-     http://localhost:3000
-     ```
+   - L'application sera accessible sur `http://localhost:3000` (ou le port indiqué)
 
 4. **Déployer en production**  
    - Déployez tous les fichiers sur votre serveur web (Apache, Nginx, etc.)
@@ -114,3 +115,4 @@ L'utilisation de **HostOS** est régie par une licence propriétaire stricte. Bi
 5. **C'est prêt !**  
    - L'application chargera automatiquement les paramètres depuis `config.json`.  
    - Toute modification de ce fichier sera prise en compte **sans recompiler**.
+   - Rafraîchissez simplement la page dans votre navigateur pour voir les changements.
