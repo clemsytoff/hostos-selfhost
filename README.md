@@ -1,6 +1,6 @@
 # 🚀 HostOS — CMS d'Hébergement de Nouvelle Génération
 
-![Version](https://img.shields.io/badge/version-2.2.1-blue.svg) 
+![Version](https://img.shields.io/badge/version-3.0.0-blue.svg) 
 ![Status](https://img.shields.io/badge/status-stable-green.svg)
 ![License](https://img.shields.io/badge/license-GPL%20v3-blue.svg)
 
