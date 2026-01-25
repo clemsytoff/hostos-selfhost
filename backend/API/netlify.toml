@@ -1,0 +1,9 @@
+[build]
+  # Dossier contenant les fichiers statiques à déployer
+  publish = "web"
+  
+  # Commande de build (optionnel, si vous avez besoin de compiler quelque chose)
+  # command = ""
+
+# Les redirections sont gérées par le fichier web/_redirects
+

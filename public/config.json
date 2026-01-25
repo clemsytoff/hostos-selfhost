@@ -1,0 +1,11 @@
+{
+  "appName": "HostOS",
+  "appDescription": "HostOS Application - An Open Source CMS for Hosts",
+  "apiUrl": "",
+  "allowAdminRegister": 1,
+  "Maintenance_mode": 0,
+  "faviconUrl": "https://ionagroup.fr/img/logo/logov1.png",
+  "discordUrl": "https://discord.gg/694D9FAE99",
+  "version": "V2.2.1"
+}
+

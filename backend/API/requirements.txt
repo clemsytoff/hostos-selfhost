@@ -1,0 +1,24 @@
+# Serveur Web & API
+Flask
+Flask-Cors
+
+# Sécurité & Authentification
+Flask-JWT-Extended
+Werkzeug
+bcrypt
+
+# Base de données
+PyMySQL
+SQLAlchemy
+Flask-SQLAlchemy
+
+# Utilitaires & Validation
+python-dotenv
+email-validator
+requests
+
+# Serveur de production (recommandé)
+gunicorn
+
+cryptography
+pymysql

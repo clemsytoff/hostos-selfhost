@@ -1,0 +1,61 @@
+from flask import Blueprint, request, jsonify
+from flask_jwt_extended import create_access_token
+import bcrypt
+import pymysql
+from config import Config
+
+admin_login_bp = Blueprint("admin_login", __name__)
+
+def get_connection():
+    """Crée une connexion à la base MySQL"""
+    return pymysql.connect(
+        host=Config.DB_HOST,
+        user=Config.DB_USER,
+        password=Config.DB_PASSWORD,
+        database=Config.DB_NAME
+    )
+
+@admin_login_bp.route("/admin/login", methods=["POST"])
+def login():
+    data = request.json
+    # On récupère les données (attention à la casse dans ton JS, ici "Email" et "Password")
+    email = data.get("Email")
+    password = data.get("Password")
+
+    if not email or not password:
+        return jsonify({"error": "Veuillez remplir tous les champs"}), 400
+
+    conn = get_connection()
+    try:
+        cursor = conn.cursor()
+        # On récupère l'ID, le Hash et le Prénom depuis la table Staff
+        cursor.execute("SELECT ID, PasswordHash, FirstName FROM Staff WHERE Email=%s", (email,))    
+        user = cursor.fetchone()
+        cursor.close()
+    finally:
+        conn.close()
+
+    # Si l'utilisateur n'existe pas
+    if not user:
+        return jsonify({"error": "Identifiants invalides"}), 401
+
+    # Vérification du mot de passe
+    # user[1] est le PasswordHash
+    try:
+        if not bcrypt.checkpw(password.encode('utf-8'), user[1].encode('utf-8')):
+            return jsonify({"error": "Identifiants invalides"}), 401
+    except Exception:
+        return jsonify({"error": "Erreur lors de la vérification du compte"}), 500
+
+    # --- CORRECTION CRUCIALE : IDENTITY EN STRING ---
+    # On transforme l'ID (user[0]) en texte pour éviter l'erreur 422 côté dashboard
+    token = create_access_token(identity=str(user[0]))
+
+    return jsonify({
+        "access_token": token,
+        "user": {
+            "id": user[0],
+            "firstName": user[2], # Index 2 pour le FirstName
+            "RoleID": 1           # On confirme le rôle Admin
+        }
+    })

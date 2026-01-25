@@ -2,16 +2,21 @@
 
 ![Version](https://img.shields.io/badge/version-2.2.1-blue.svg) 
 ![Status](https://img.shields.io/badge/status-stable-green.svg)
-![License](https://img.shields.io/badge/license-proprietary-red.svg)
+![License](https://img.shields.io/badge/license-GPL%20v3-blue.svg)
 
-**HostOS** est une solution hybride révolutionnaire pour les hébergeurs. Profitez de la puissance d'un front-end **React** moderne en Self-Hosted tout en bénéficiant de la sécurité d'un **Back-end managé** par IonaGroup.
+**HostOS** est un CMS d'hébergement open source moderne pour les hébergeurs. Profitez de la puissance d'un front-end **React** entièrement self-hosted et personnalisable.
 
 ---
 
 ### 🛡️ L'Architecture HostOS
-Contrairement aux CMS classiques, HostOS sépare l'interface du moteur :
-* **Front-end (Vous)** : Déployé sur votre infrastructure, 100% fluide, ultra-rapide (React).
-* **Back-end (Nous)** : Centralisé et maintenu par IonaGroup pour garantir une sécurité maximale et des mises à jour automatiques du cœur système sans aucune intervention de votre part.
+HostOS est un CMS moderne entièrement self-hosted et open source :
+* **Front-end React** : Interface moderne, fluide et ultra-rapide déployée sur votre infrastructure.
+* **Back-end Python Flask** : API REST complète incluse dans le projet, également open source.
+* **Base de données** : Template de schéma de base de données inclus pour faciliter la configuration.
+* **100% Open Source** : Tout le code source (front-end, back-end, base de données) est librement accessible et modifiable selon vos besoins.
+* **Personnalisable** : Contrôle total sur le design, les fonctionnalités et l'expérience utilisateur.
+
+⚠️ **Important** : Vous devez configurer et connecter tous les composants vous-même (front-end, API Flask, base de données). Tout est fourni dans le projet, mais la configuration et le déploiement sont de votre responsabilité.
 
 ---
 
@@ -32,92 +37,142 @@ Contrairement aux CMS classiques, HostOS sépare l'interface du moteur :
 
 #### ⚙️ Système & Maintenance
 * **Centre d'Updates** : Page dédiée listant l'historique complet des versions et correctifs (v1.1.5).
-* **Smart Update Alert** : Icône et notification automatique si votre interface n'est pas à jour (v2.0.1).
+* **Smart Update Alert** : Icône et notification automatique si votre interface n'est pas à jour (v2.0.1). Les requêtes de mise à jour sont effectuées vers l'API publique pour vous tenir informé des dernières versions disponibles.
 * **Architecture React** : Interface compilée pour une fluidité maximale et des temps de chargement réduits (v2.2.0).
 * **Personnalisation Totale** : Contrôle des textes (Hero, Features, CTA) via une base de données sécurisée (Work In Progress).
-- **Mode maintenance** : Page qui indique que le site est en maintenance, rendant toutes les autres pages inaccessibles (v2.2.1).
+* **Mode maintenance** : Page qui indique que le site est en maintenance, rendant toutes les autres pages inaccessibles (v2.2.1).
 ---
 
-### 🌐 Nos Offres
+### 📜 Licence
 
-| Option | Description |
-| :--- | :--- |
-| **Self-Hosted** | Vous hébergez l'interface sur votre serveur pour un contrôle total du domaine et du style. |
-| **On-Host (Managed)** | On s'occupe de TOUT. Hébergement du front et du back pour un lancement en 5 minutes. |
+**Ce projet est sous licence GPL v3 (GNU General Public License version 3).**
 
----
+#### 🔓 Droits accordés par la GPL v3
 
-### ⚠️ Licence & Conditions d'Utilisation
-**Copyright © 2026 IonaGroup - HostOS. Tous droits réservés.**
+La licence GPL v3 vous accorde les libertés suivantes :
 
-L'utilisation de **HostOS** est régie par une licence propriétaire stricte. Bien que le code de l'interface soit accessible pour le déploiement, il ne s'agit pas d'un logiciel libre (Open Source).
+* ✅ **Liberté d'utilisation** : Vous pouvez utiliser HostOS pour n'importe quel usage, commercial ou non.
+* ✅ **Liberté d'étude** : Vous avez accès au code source complet pour comprendre comment fonctionne le CMS.
+* ✅ **Liberté de modification** : Vous pouvez modifier le code selon vos besoins.
+* ✅ **Liberté de distribution** : Vous pouvez partager le code original ou modifié.
 
-#### 🛡️ Protection de la Propriété Intellectuelle
-* **Exclusivité** : IonaGroup reste l'unique détenteur des droits intellectuels sur le code source, le design et l'architecture du CMS.
-* **Interdiction de Revente** : Il est strictement interdit de vendre, louer ou sous-licencier HostOS, que ce soit sous sa forme originale ou après modification.
-* **Non-Redistribution** : Vous n'êtes pas autorisé à redistribuer ou partager le code source à des tiers sans un accord écrit préalable.
+#### 📋 Obligations de la GPL v3
 
-#### 🔑 Système de Licence & Validation
-* **Modèle Freemium** : La licence d'exploitation est **gratuite pour un usage personnel et professionnel**, sous réserve d'un enregistrement valide.
-* **Clé d'Activation** : Une clé de licence unique est obligatoire pour lier votre interface locale (Self-Hosted) au cœur du système (Back-end managé).
+En contrepartie, la GPL v3 vous impose certaines obligations :
 
-#### ☁️ Architecture Hybride & Dépendances
-* **Services Managés** : Pour garantir une sécurité maximale et des mises à jour fluides, le Back-end (API Core) est exclusivement hébergé et maintenu par IonaGroup.
-* **Continuité de Service** : L'utilisation de ce CMS implique l'acceptation que les fonctionnalités vitales dépendent de la connectivité avec les serveurs officiels de IonaGroup.
+* 📄 **Conservation de la licence** : Si vous distribuez HostOS (original ou modifié), vous devez conserver la licence GPL v3.
+* 📄 **Publication du code source** : Si vous distribuez une version modifiée, vous devez rendre le code source disponible sous la même licence GPL v3.
+* 📄 **Mention de la licence** : Vous devez inclure une copie de la licence GPL v3 avec toute distribution.
 
-👉 **[Voir la démo en ligne](https://hostos.ionagroup.fr/)** | **[Demander une licence gratuite sur Discord](https://discord.gg/694D9FAE99)**
+#### 🙏 Demande personnelle de l'auteur
+
+Bien que la GPL v3 ne l'exige pas, **je vous demande respectueusement de conserver le lien vers l'auteur dans le footer** par respect pour le travail fourni. C'est la meilleure façon de soutenir le projet et de montrer votre appréciation.
+
+Le footer par défaut contient :
+```
+© 2026 HostOS — Développé par Clément Buchweiller — Open Source sur GitHub
+```
+
+Vous pouvez personnaliser ce footer, mais je vous serais reconnaissant de conserver au minimum une mention de l'auteur original.
+
+#### 📚 En savoir plus sur la GPL v3
+
+Pour plus d'informations sur la licence GPL v3, consultez :
+* [Le texte complet de la licence GPL v3](https://www.gnu.org/licenses/gpl-3.0.html)
+* [La FAQ de la Free Software Foundation](https://www.gnu.org/licenses/gpl-faq.html)
+
+👉 **[Voir le code source sur GitHub](https://github.com/clemsytoff/hostos-cms)** | **[Voir la démo en ligne](https://hostos.ionagroup.fr/)**
 ---
 
 ### 🚀 Démarrage Rapide
 
 1. **Récupérer le projet**  
-   - Téléchargez ou clonez le dossier compilé.
+   - Téléchargez ou clonez le repository complet.
+   - Le projet contient :
+     - Le front-end React (dossier `public/` et `src/`)
+     - L'API Python Flask (dossier `backend/`)
+     - Le template de base de données (dossier `backend/`)
 
-2. **Configurer l'application**  
-   - Ouvrez `config.json` à la racine du projet pour personnaliser :  
-     - `appName` : Nom de l'application  
-     - `appDescription` : Description de l'application
-     - `apiUrl` : URL de l'API backend (fournie avec votre licence)
-     - `license_key` : Votre clé de licence (obligatoire)
-     - `site_url` : URL de votre site (obligatoire)
-     - `allowAdminRegister` : Autoriser l'inscription admin (`1` pour activer, `0` pour désactiver)
-     - `faviconUrl` : URL du favicon
-     - `discordUrl` : Lien Discord  
-     - `version` : Version de l'application (ne pas modifier)  
-   - Exemple de `config.json` configuré :  
-     ```json
-     {
-       "appName": "Mon HostOS",
-       "appDescription": "HostOS Application - A CMS for Hosts",
-       "apiUrl": "https://hostosapi.ionagroup.fr",
-       "license_key": "votre_cle_de_licence",
-       "site_url": "https://votre-site.com",
-       "allowAdminRegister": 0,
-       "faviconUrl": "https://ionagroup.fr/img/logo/logov1.png",
-       "discordUrl": "https://discord.gg/694D9FAE99",
-       "version": "V2.1.1"
-     }
+2. **Configurer la base de données**  
+   - Importez le template de base de données fourni dans votre système de gestion de base de données (MySQL, PostgreSQL, etc.).
+   - Configurez les identifiants de connexion dans votre API Flask.
+
+3. **Configurer l'API Flask**  
+   - Installez les dépendances Python nécessaires :
+     ```bash
+     pip install -r requirements.txt
      ```
-   - 💡 **Note** : Pour désactiver l'inscription admin et sécuriser votre installation, mettez `allowAdminRegister` à `0`.
+   - Configurez les variables d'environnement (connexion à la base de données, clés secrètes, etc.).
+   - Démarrez l'API Flask :
+     ```bash
+     python app.py
+     ```
+   - Assurez-vous que l'API est accessible et fonctionne correctement.
 
-3. **Lancer l'application**  
+4. **Configurer le front-end**  
+   - Ouvrez `public/config.json` à la racine du projet pour personnaliser votre installation.
+   
+   #### 📋 Configuration du `config.json`
+   
+   Le fichier `config.json` permet de personnaliser votre instance HostOS sans recompiler le code. Voici les paramètres disponibles :
+   
+   | Paramètre | Description | Exemple |
+   | :--- | :--- | :--- |
+   | `appName` | Nom de l'application affiché dans l'interface | `"Mon HostOS"` |
+   | `appDescription` | Description de l'application (métadonnées) | `"HostOS Application - An Open Source CMS for Hosts"` |
+   | `apiUrl` | URL de votre API backend | `"https://api.votre-domaine.com"` |
+   | `allowAdminRegister` | Autoriser l'inscription admin (`1` = activé, `0` = désactivé) | `0` |
+   | `Maintenance_mode` | Mode maintenance (`1` = activé, `0` = désactivé) | `0` |
+   | `faviconUrl` | URL du favicon | `"https://votre-domaine.com/favicon.ico"` |
+   | `discordUrl` | Lien Discord pour le support | `"https://discord.gg/..."` |
+   | `version` | Version de l'application (ne pas modifier) | `"V2.2.1"` |
+   
+   ⚠️ **Important** : 
+   - Les requêtes de mise à jour vers l'API publique (`https://api.ionagroup.fr/hostos/updates`) permettent au panel d'administration de vous informer des dernières versions disponibles. Il est recommandé de laisser ces requêtes actives pour rester informé des mises à jour.
+   - Pour sécuriser votre installation, mettez `allowAdminRegister` à `0` après avoir créé votre premier compte administrateur.
+   
+   Exemple de `config.json` configuré :  
+   ```json
+   {
+     "appName": "Mon HostOS",
+     "appDescription": "HostOS Application - An Open Source CMS for Hosts",
+     "apiUrl": "https://api.votre-domaine.com",
+     "allowAdminRegister": 0,
+     "Maintenance_mode": 0,
+     "faviconUrl": "https://votre-domaine.com/favicon.ico",
+     "discordUrl": "https://discord.gg/694D9FAE99",
+     "version": "V2.2.1"
+   }
+   ```
+
+5. **Lancer l'application**  
+   - Assurez-vous que votre API Flask est démarrée et accessible.
    - Ouvrez simplement `index.html` avec un serveur web.
    - Pour un test rapide en local, vous pouvez utiliser :  
      ```bash
      npx serve .
      ```
    - L'application sera accessible sur `http://localhost:3000` (ou le port indiqué)
+   - ⚠️ **Important** : Vérifiez que l'`apiUrl` dans `config.json` pointe vers votre API Flask.
 
-4. **Déployer en production**  
-   - Déployez tous les fichiers sur votre serveur web (Apache, Nginx, etc.)
-   - Assurez-vous que `config.json` contient vos vraies valeurs (`license_key`, `site_url`, `apiUrl`)
-   - Configurez votre serveur pour servir `index.html` pour toutes les routes (SPA)
+6. **Déployer en production**  
+   - **Base de données** : Déployez votre base de données sur votre serveur de production.
+   - **API Flask** : Déployez votre API Flask (avec Gunicorn, uWSGI, ou autre serveur WSGI).
+   - **Front-end** : Déployez tous les fichiers du front-end sur votre serveur web (Apache, Nginx, etc.)
+   - Assurez-vous que `config.json` contient vos vraies valeurs (`apiUrl` pointant vers votre API en production, etc.)
+   - Configurez votre serveur web pour servir `index.html` pour toutes les routes (SPA)
+   - Configurez CORS dans votre API Flask pour autoriser les requêtes depuis votre domaine front-end.
 
-4.1 **Déployer sur Nestlify**  
-   - Assurez-vous que `config.json` contient vos vraies valeurs (`license_key`, `site_url`, `apiUrl`)
-   - Importez le code sur Nestlify, tout se fera automatiquement
+6.1 **Déployer sur Netlify (Recommandé pour le front-end)**  
+   - Le projet contient un dossier **Netlify** avec la **version compilée du front-end**, prête à être déployée.
+   - Cette version compilée est **plus simple à déployer** car elle ne nécessite pas de compilation.
+   - Importez simplement le contenu du dossier Netlify sur Netlify.
+   - Assurez-vous que votre API Flask est déployée et accessible publiquement.
+   - Assurez-vous que `config.json` dans le dossier Netlify contient l'URL de votre API en production.
+   - Netlify configurera automatiquement le déploiement.
 
-5. **C'est prêt !**  
+7. **C'est prêt !**  
    - L'application chargera automatiquement les paramètres depuis `config.json`.  
    - Toute modification de ce fichier sera prise en compte **sans recompiler**.
    - Rafraîchissez simplement la page dans votre navigateur pour voir les changements.
+   - Vérifiez que toutes les connexions fonctionnent : front-end → API → base de données.

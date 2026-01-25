@@ -1,0 +1,10 @@
+# Configuration pour drag & drop - pas de build nécessaire
+# Les fichiers sont déjà compilés
+
+[build]
+  # Pas de commande de build - les fichiers sont déjà compilés
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
