@@ -125,7 +125,7 @@ Pour plus d'informations sur la licence GPL v3, consultez :
    | `Maintenance_mode` | Mode maintenance (`1` = activé, `0` = désactivé) | `0` |
    | `faviconUrl` | URL du favicon | `"https://votre-domaine.com/favicon.ico"` |
    | `discordUrl` | Lien Discord pour le support | `"https://discord.gg/..."` |
-   | `version` | Version de l'application (ne pas modifier) | `"V2.2.1"` |
+   | `version` | Version de l'application (ne pas modifier) | `"V3.0.0"` |
    
    ⚠️ **Important** : 
    - Les requêtes de mise à jour vers l'API publique (`https://api.ionagroup.fr/hostos/updates`) permettent au panel d'administration de vous informer des dernières versions disponibles. Il est recommandé de laisser ces requêtes actives pour rester informé des mises à jour.
