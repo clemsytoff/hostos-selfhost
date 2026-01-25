@@ -6,8 +6,8 @@
 
 **HostOS** est un CMS d'hébergement open source moderne pour les hébergeurs. Profitez de la puissance d'un front-end **React** entièrement self-hosted et personnalisable.
 
-👉 **[Discord communautaire & support]([https://hostos.ionagroup.fr/](https://discord.gg/694D9FAE99))**
 ---
+👉 **[Discord communautaire & support]([https://hostos.ionagroup.fr/](https://discord.gg/694D9FAE99))**
 
 ### 🛡️ L'Architecture HostOS
 HostOS est un CMS moderne entièrement self-hosted et open source :
