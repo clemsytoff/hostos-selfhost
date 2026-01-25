@@ -6,6 +6,7 @@
 
 **HostOS** est un CMS d'hébergement open source moderne pour les hébergeurs. Profitez de la puissance d'un front-end **React** entièrement self-hosted et personnalisable.
 
+👉 **[Discord communautaire & support]([https://hostos.ionagroup.fr/](https://discord.gg/694D9FAE99))**
 ---
 
 ### 🛡️ L'Architecture HostOS
@@ -81,7 +82,7 @@ Pour plus d'informations sur la licence GPL v3, consultez :
 * [Le texte complet de la licence GPL v3](https://www.gnu.org/licenses/gpl-3.0.html)
 * [La FAQ de la Free Software Foundation](https://www.gnu.org/licenses/gpl-faq.html)
 
-👉 **[Voir le code source sur GitHub](https://github.com/clemsytoff/hostos-cms)** | **[Voir la démo en ligne](https://hostos.ionagroup.fr/)**
+👉 **[Voir le code source sur GitHub](https://github.com/clemsytoff/hostos-cms)** | **[Voir la démo en ligne](https://hostos.ionagroup.fr/)** | **[Discord communautaire & support]([https://hostos.ionagroup.fr/](https://discord.gg/694D9FAE99))**
 ---
 
 ### 🚀 Démarrage Rapide
