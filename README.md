@@ -1,6 +1,6 @@
 # 🚀 HostOS — CMS d'Hébergement de Nouvelle Génération
 
-![Version](https://img.shields.io/badge/version-2.1.1-blue.svg) 
+![Version](https://img.shields.io/badge/version-2.2.1-blue.svg) 
 ![Status](https://img.shields.io/badge/status-stable-green.svg)
 ![License](https://img.shields.io/badge/license-proprietary-red.svg)
 
@@ -35,6 +35,7 @@ Contrairement aux CMS classiques, HostOS sépare l'interface du moteur :
 * **Smart Update Alert** : Icône et notification automatique si votre interface n'est pas à jour (v2.0.1).
 * **Architecture React** : Interface compilée pour une fluidité maximale et des temps de chargement réduits (v2.2.0).
 * **Personnalisation Totale** : Contrôle des textes (Hero, Features, CTA) via une base de données sécurisée (Work In Progress).
+- **Mode maintenance** : Page qui indique que le site est en maintenance, rendant toutes les autres pages inaccessibles (v2.2.1).
 ---
 
 ### 🌐 Nos Offres
@@ -111,6 +112,10 @@ L'utilisation de **HostOS** est régie par une licence propriétaire stricte. Bi
    - Déployez tous les fichiers sur votre serveur web (Apache, Nginx, etc.)
    - Assurez-vous que `config.json` contient vos vraies valeurs (`license_key`, `site_url`, `apiUrl`)
    - Configurez votre serveur pour servir `index.html` pour toutes les routes (SPA)
+
+4.1 **Déployer sur Nestlify**  
+   - Assurez-vous que `config.json` contient vos vraies valeurs (`license_key`, `site_url`, `apiUrl`)
+   - Importez le code sur Nestlify, tout se fera automatiquement
 
 5. **C'est prêt !**  
    - L'application chargera automatiquement les paramètres depuis `config.json`.  
