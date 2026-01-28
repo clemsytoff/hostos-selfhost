@@ -142,16 +142,17 @@ Pour plus d'informations sur la licence GPL v3, consultez :
      "Maintenance_mode": 0,
      "faviconUrl": "https://votre-domaine.com/favicon.ico",
      "discordUrl": "https://discord.gg/694D9FAE99",
-     "version": "V2.2.1"
+     "version": "V3.0.0"
    }
    ```
 
 5. **Lancer l'application**  
    - Assurez-vous que votre API Flask est démarrée et accessible.
    - Ouvrez simplement `index.html` avec un serveur web.
-   - Pour un test rapide en local, vous pouvez utiliser :  
+   - Pour un test rapide en local, vous pouvez utiliser (pour la version compilée npm run preview):  
      ```bash
-     npx serve .
+     npm install vite
+     npm run dev
      ```
    - L'application sera accessible sur `http://localhost:3000` (ou le port indiqué)
    - ⚠️ **Important** : Vérifiez que l'`apiUrl` dans `config.json` pointe vers votre API Flask.
